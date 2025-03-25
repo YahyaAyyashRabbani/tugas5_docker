@@ -1,0 +1,22 @@
+GET http://localhost:5000/notes
+
+###
+POST http://localhost:5000/add-notes
+Content-Type: application/json
+
+{
+    "judul": "day1",
+    "isi": "Male"
+}
+
+###
+PUT  http://localhost:5000/note/1
+Content-Type: application/json
+
+{
+    "judul": "day1",
+    "isi": "apa"
+}
+
+###
+DELETE http://localhost:5000/note/1
